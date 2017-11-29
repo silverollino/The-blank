@@ -1,12 +1,39 @@
-body{width:90%;margin:auto;min-width:600px;max-width:2000px}
+body{
+  background-color: rgb(146, 150, 150);
+  width:90%;
+  margin:auto;
+  min-width:600px;
+  max-width:2000px
+}
+
 
 #wrap { 
 	width: 900px; 
 	margin: 0 auto; 
 }
 
+#ncuarto{
+  background-color: hsl(110, 49%, 50%);
+  color: #fefefe;
+}
+
+#ncuarto:hover{
+  background-color: hsl(109, 48%, 42%);
+  color: #fefefe;
+}
+
+#ucuarto{
+  background-color: hsl(193, 64%, 56%);
+  color: #fefefe;
+}
+
+#ucuarto:hover{
+  background-color: hsl(193, 50%, 52%);
+  color: #fefefe;
+}
+
 .social {
-    margin-right: .25rem;
+    margin-right: .50rem;
   }  
 
 
