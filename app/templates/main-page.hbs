@@ -2,32 +2,34 @@
 
 <div class="row-center">
     <div>
-        <button id="ncuarto" class="btn btn-block">CREAR UNA SALA</button>
+        {{#link-to "new-room" tagName="button" id="ncuarto" class="btn btn-block"}}CREAR UNA SALA{{/link-to}}
     </div>
 </div>
 <br>
 <div class="row-center">
     <div>
-        <button id="ucuarto" class="btn btn-block">UNIRSE A SALA</button>
+        {{#link-to "join-room" tagName="button" id="ucuarto" class="btn btn-block"}}UNIRSE A SALA{{/link-to}}
     </div>
 </div>
 
 <hr>
 
 <h2 class="text-center">INICIAR SESION</h2>
-<div class="btn-group-vertical" align="center">
-    <button type="button" class="btn button social email">
-        <i class="fa fa-envelope" aria-hidden="true"></i> E-mail
-    </button>
+<center>
+    <div class="btn-group-vertical">
+        <button type="button" class="btn button social email">
+            <i class="fa fa-envelope" aria-hidden="true"></i> E-mail
+        </button>
 
-    <button type="button" class="btn button social google-plus">
-        <i class="fa fa-google-plus" aria-hidden="true"></i> Google
-    </button>
+        <button type="button" class="btn button social google-plus">
+            <i class="fa fa-google-plus" aria-hidden="true"></i> Google
+        </button>
 
-    <button type="button" class="btn button social github">
-        <i class="fa fa-github" aria-hidden="true"></i> Github
-    </button>
-</div>
+        <button type="button" class="btn button social github">
+            <i class="fa fa-github" aria-hidden="true"></i> Github
+        </button>
+    </div>
+</center>
 
 <hr>
 

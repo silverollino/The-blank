@@ -1,7 +1,7 @@
 /* eslint-env node */
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'the-blankv2',
     environment,
@@ -30,6 +30,16 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.firebase = {
+      // Initialize Firebase
+      apiKey: "AIzaSyCYN7ZgEvJ1zdCiMezUG9L_LLxL3Fzzz34",
+      authDomain: "the-blank.firebaseapp.com",
+      databaseURL: "https://the-blank.firebaseio.com",
+      projectId: "the-blank",
+      storageBucket: "",
+      messagingSenderId: "583093703210"
+
+    }
   }
 
   if (environment === 'test') {

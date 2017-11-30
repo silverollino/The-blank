@@ -1,15 +1,29 @@
-body{
-  background-color: rgb(146, 150, 150);
-  width:90%;
+#pagina{
+  background-color: rgb(223, 224, 224);
+  width:auto;
   margin:auto;
   min-width:600px;
   max-width:2000px
 }
 
+.center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
 
 #wrap { 
 	width: 900px; 
 	margin: 0 auto; 
+}
+
+#qstn{
+  font-size: 20px;
+  text-align: justify;
+}
+
+#answr{
+  font-size: 25px;
 }
 
 #ncuarto{
