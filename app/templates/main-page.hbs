@@ -17,15 +17,15 @@
 <h2 class="text-center">INICIAR SESION</h2>
 <center>
     <div class="btn-group-vertical">
-        <button type="button" class="btn button social email">
+        <button type="button" class="btn button social email" {{action "signIn" email}}>
             <i class="fa fa-envelope" aria-hidden="true"></i> E-mail
         </button>
 
-        <button type="button" class="btn button social google-plus">
+        <button type="button" class="btn button social google-plus" {{action "signIn" "google"}}>
             <i class="fa fa-google-plus" aria-hidden="true"></i> Google
         </button>
 
-        <button type="button" class="btn button social github">
+        <button type="button" class="btn button social github"  {{action "signIn" "github"}}>
             <i class="fa fa-github" aria-hidden="true"></i> Github
         </button>
     </div>

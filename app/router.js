@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('new-room');
   this.route('join-room');
   this.route('game-room');
+  this.route('registrar');
 });
 
 export default Router;

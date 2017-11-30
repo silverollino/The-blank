@@ -1,9 +1,9 @@
 
 <body id="pagina" class="center" style="font-family: 'Amatic SC', cursive;">
     <div class="row">
-        <div class="col-3"></div>
+        <div class="col-2"></div>
         <center>
-            <div class="col-6">
+            <div class="col-8">
                 <div class="row justify-content-md-center">
                     <div class="col col-lg-2">
                         {{#link-to "main-page" tagName="button" class="btn btn-success"}}Home{{/link-to}}
@@ -13,13 +13,19 @@
                             <b>THE BLANK</b>
                         </h1>
                     </div>
+                    {{#if session.isAuthenticated}}
                     <div class="col col-lg-2">
-                        <button class="btn btn-danger" id="logout">Logout</button>
+                        <button {{action "signOut"}} class="btn btn-danger" id="logout">Logout</button>
                     </div>
+                    {{else}}
+                    <div class="col col-lg-2">
+                        {{#link-to "registrar" class="btn btn-danger"}}Registrate{{/link-to}}
+                    </div>
+                    {{/if}}
                 </div>
                 {{outlet}}
             </div>
         </center>
-        <div class="col-3"></div>
+        <div class="col-2"></div>
     </div>
 </body>
