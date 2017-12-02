@@ -1,4 +1,4 @@
-import FirebaseAdapter from 'emberfire/serializer/firebase';
+import FirebaseSerializer from 'emberfire/serializers/firebase'
 
 export default FirebaseSerializer.extend({
 });
