@@ -1,0 +1,6 @@
+{
+  "name": "the-blankv2",
+  "dependencies": {
+    "sweetalert2": "^6.1.0"
+  }
+}
