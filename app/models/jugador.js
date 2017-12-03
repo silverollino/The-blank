@@ -7,6 +7,6 @@ export default DS.Model.extend({
     resSelec: DS.attr("string"),
 
     cuarto: DS.belongsTo("cuarto"),
-    respuesta: DS.belongsTo("respuesta")
+    answer: DS.belongsTo("answer")
 
 });

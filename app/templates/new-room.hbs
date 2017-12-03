@@ -2,11 +2,9 @@
 {{input type="text" value=roomName}}
 <button {{action "newRoom"}} class="btn btn-success">Crear</button>
 <hr style="width: 600px">
+
 {{#if roomCreated}}
-<div>
-    <label>Te has unido al cuarto: CUARTO</label>
-    <h2>Escribe tu nombre</h2>
-    {{input type="text" id="name" value="Nombre"}} {{#link-to "game-room" tagName="button" class="btn" id="ucuarto"}}Jugar!{{/link-to}}
-</div>
+{{join-room}}
 {{/if}}
+
  {{outlet}}

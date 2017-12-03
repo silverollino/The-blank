@@ -1,0 +1,15 @@
+<center>
+    <div>
+        <h2>Entra a un cuarto</h2>
+        {{input type="text" id="roomName" value="Room"}}
+        <button {{action 'chkRoom'}} class='btn' id='ncuarto'>Entrar</button>
+    </div>
+    <hr style="width: 600px">
+     {{#if isValid}}
+    <div>
+        <label>Te has unido al cuarto: CUARTO</label>
+        <h2>Escribe tu nombre</h2>
+        {{input type="text" id="name" value="Nombre"}} {{#link-to "game-room" tagName="button" class="btn" id="ucuarto"}}Jugar!{{/link-to}}
+    </div>
+    {{/if}}
+</center>
