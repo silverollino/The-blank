@@ -2,14 +2,24 @@
     <div>
         <h2>Entra a un cuarto</h2>
         {{input type="text" value=roomName}}
-        <button {{action 'chkRoom'}} class='btn' id='ncuarto'>Entrar</button>
+        <button {{action 'chkRoom' roomName model}} class='btn' id='ncuarto'>Entrar</button>
     </div>
     <hr style="width: 600px">
      {{#if isValid}}
     <div>
-        <label>Te has unido al cuarto: CUARTO</label>
+        <label>Te has unido al cuarto: {{roomName}}</label>
         <h2>Escribe tu nombre</h2>
-        {{input type="text" value=playerName}} {{#link-to "game-room" tagName="button" class="btn" id="ucuarto"}}Jugar!{{/link-to}}
+        {{input type="text" value=playerName}} 
+
+        <button class="btn" id="ucuarto" {{action 'addPlayer' playerName roomName model}}>
+        {{!-- {{#link-to "game-room" roomId invokeAction=(action 'addPlayer' playerName) tagName="button" class="btn" id="ucuarto"}} --}}
+        Jugar!
+        {{!-- {{/link-to}} --}}
+        </button>
+        <div hidden>
+        {{input type='text' value=roomId}}
+        <p>{{roomId}}</p>
+        </div>
     </div>
     {{/if}}
 </center>

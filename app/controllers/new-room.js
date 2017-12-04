@@ -32,7 +32,7 @@ export default Controller.extend({
             var currentRooms = model.cuartos.content; //Obtenemos el arreglos con datos a leer         
             var repetido;
             var seRepitio = false;
-
+            debugger;
             //Obteniendo el tamaño del arreglo
             if (typeof (currentRooms) == "undefined" || typeof (currentRooms) == "string" || typeof (currentRooms) == "number") {
                 return repetido = 0;
