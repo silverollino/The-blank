@@ -1,6 +1,6 @@
 <h2>CREA UN NUEVO CUARTO</h2>
 {{input type="text" value=roomName}}
-<button {{action "newRoom" roomName}} class="btn btn-success">Crear</button>
+<button {{action "newRoom" roomName model}} class="btn btn-success">Crear</button>
 <hr style="width: 600px">
 
 {{#if roomCreated}}
